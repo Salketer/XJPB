@@ -5,3 +5,5 @@
 
 
 exports.Parser = require('./parser.js');
+
+exports.Compat = {xmljs2:require('./compat/xmljs2.js')};
