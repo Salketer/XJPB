@@ -16,7 +16,6 @@ describe('XJPB Compatibility XMLJS2', () => {
 
         parser = new XJPB_Parser();
         parser.parse(fs.createReadStream('./tests/assets/medium_size.xml'),(parsedObject)=>{
-            console.log(compat_xmljs2(parsedObject));
             done();
         });
 

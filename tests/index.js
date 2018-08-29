@@ -1,3 +1,5 @@
-test('adds 1 + 2 to equal 3', () => {
-    expect(true).toBe(true);
-});
+
+
+
+let r = require('../src/index.js');
+console.log(r);

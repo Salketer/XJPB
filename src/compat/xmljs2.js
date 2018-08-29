@@ -14,6 +14,12 @@ function grab(node){
     let __ret = {
         '#name':node.type
     };
+    if(node._content['@']){
+        __ret['@'] = node._content['@'];
+    }
+    if(node._content['#']){
+        __ret['#'] = node._content['#'];
+    }
     if(node._content.$$){
         for(let i in node._content.$$){
             let n = grab(node._content.$$[i]);
@@ -30,12 +36,7 @@ function grab(node){
             __ret.$$.push(n);
         }
     }
-    if(node._content['@']){
-        __ret['@'] = node._content['@'];
-    }
-    if(node._content['#']){
-        __ret['#'] = node._content['#'];
-    }
+
 
     return __ret;
 }
