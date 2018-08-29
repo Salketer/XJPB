@@ -13,7 +13,7 @@ describe('XJPB Parser', () => {
         //parser.parse("<test>My test</test>");
 
         parser = new XJPB_Parser();
-        parser.parse(fs.createReadStream('./tests/assets/medium_size.xml'),(root)=>{
+        parser.parse(fs.createReadStream('./tests/assets/medium_size.xml'),(error,root)=>{
             done();
         });
 

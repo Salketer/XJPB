@@ -127,7 +127,7 @@ XJPB_Parser.prototype.parse = function parse(subject, finish_cb) {
     stream.pipe(this._streamer);
 
     this._streamer.on('finish', ()=> {
-        finish_cb(this._parsed);
+        finish_cb(null,this._parsed);
     })
 };
 

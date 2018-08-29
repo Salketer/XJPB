@@ -15,7 +15,7 @@ describe('XJPB Compatibility XMLJS2', () => {
         //parser.parse("<test>My test</test>");
 
         parser = new XJPB_Parser();
-        parser.parse(fs.createReadStream('./tests/assets/medium_size.xml'),(parsedObject)=>{
+        parser.parse(fs.createReadStream('./tests/assets/medium_size.xml'),(error,parsedObject)=>{
             done();
         });
 
