@@ -1,0 +1,22 @@
+{
+  "name": "xjpb",
+  "version": "0.0.1",
+  "description": "XML-JSON Parser/Builder",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salketer/XJPB.git"
+  },
+  "author": "Mathieu Parent",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Salketer/XJPB/issues"
+  },
+  "homepage": "https://github.com/Salketer/XJPB#readme",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
+}
